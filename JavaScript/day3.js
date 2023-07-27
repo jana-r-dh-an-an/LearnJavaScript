@@ -280,15 +280,213 @@
 
 
 //Task-4 Object_properties and methods and this
-const data ={
-    name:"jana",
-    age:34
-}
+
 
 
 //function
-const callMe=function (){
-    console.log('Hello');
-}
+// const data ={
+//     name:"jana",
+//     age:34,
+//     getAnotherName:function(){
+//         console.log('Rangineni');
+//     }
+// }
+// const a=10; //below function and here variable are same as like the data will be binded
+// const callMe=function (){
+//     console.log('Hello');
+// }
 
-console.log(callMe,data);
+// console.log(callMe,data);
+// console.log(data.getAnotherName);
+// console.log(data['name']);
+
+
+
+
+
+
+
+//if u want to combine the data inside the object
+
+// const family={
+//     names:"Kokila",
+//     age:34,
+//     getData:function(){
+        
+//         console.log("My name is "+family.names+" and my age is "+family.age);
+//     }
+
+// }
+// family.getData();//calling the method data inside the object
+// console.log(family['age']);//using the projection data 
+// console.log(family.names);//getting the . notation process
+
+
+
+
+//Another way of creating object 
+
+// function data(){
+//     return{
+//     firstname:"Janardhanan",
+//     lastName:"Rangineni",
+//     age:34,
+//     gender:"male",
+//     allData:function(){
+//   console.log(this.firstname+" "+this.lastName+" "+this.age+" "+this.gender);
+//     }
+// }
+// }
+
+// const getData=data();
+// getData.allData()
+
+
+//Creating objects inside the list
+
+// const list=[
+//     {
+//         name:"jana",
+//         age:34,
+//         gender:"male",
+//         getAllData:function(){
+//         console.log(this.name+" "+this.age+" "+this.gender);
+//         }
+//     }
+// ]
+
+// const getData=list[0];
+// getData.getAllData();
+
+
+
+
+//Excludig the object data inside the variable
+
+// const data={
+//     firstName:"janardhanan",
+//     lastName:"Rangineni",
+//     gender:'Male',
+//     allData:function(){
+//         console.log(this.firstName+" "+this.lastName+" "+this.gender);
+//     }
+
+// }
+
+// const x=data.allData;
+// // console.log(x);
+
+// console.log(x,data.allData);
+
+// data.allData();
+// x();// wrong way of calling object
+
+
+
+//Use strict
+//using strict mode will enable the function as strictly it doesn't enable the window global function
+
+
+
+// const data=function(){
+//     'use strict'
+//     console.log(this);
+// }
+// data();//undefined 
+
+// const x={
+//     name:"jana",
+//     getdata:function(){
+//         console.log(this);
+//     }
+// }
+
+// x.getdata();
+// const s=x.name;
+// console.log(s);
+
+
+
+//in-built data types
+// const sd="jana";
+// const a= new String("jana1");
+// console.log(sd);
+// console.log(a);
+
+// const b=new Boolean(1);
+// console.log(b);
+
+// const c= new Number(56);
+// console.log(c);
+
+
+/*
+Learn this Objects
+String--primitve
+number-primitive
+boolean-primitive
+bigint-primitve
+array-compound data type -we can align this data
+object-compound data type
+*/
+//Learning object Methods
+
+
+
+//Mapping the object data inside the another functions 
+// const engineType={
+//     diesel:"No",
+//     Petrol:"YES"
+// }
+
+// const car={
+//     name:"Audi",
+//     model:"A4",
+//     color:"red",
+//     state:"ON",
+//     Tank:"Petrol",
+//     startCar:function(){
+//      this.state="Runnning"
+//      console.log(this.state);
+//     },
+//     stopCars:function(){
+//         this.state="OFF"
+//         console.log(this.state);
+//     },
+//     mapData(){
+//         const g=this.Tank;
+//       console.log(engineType[g]);
+//     //   return engineType[this.Tank];
+//     }
+
+// }
+
+// car.startCar();
+// car.stopCars();
+// car.mapData();
+
+
+
+
+//Easy way of creating the objects and doing the functionality inside the object
+
+// const plate={
+//     width:100,
+//     height:200,
+//     calcArea(){
+// console.log(this.width*this.height+'cm');  
+//   }
+
+// }
+// plate.calcArea();
+
+
+// const calcMyAge={
+//     born: new Date('1996-02-17'),
+//     myage(){
+//         const todayDate= new Date();
+//         const overAllAge=todayDate-this.born
+//         console.log(overAllAge/(365*24*60*60*1000));
+//     }
+// }
+// calcMyAge.myage();
