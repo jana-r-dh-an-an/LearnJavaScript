@@ -490,3 +490,199 @@ object-compound data type
 //     }
 // }
 // calcMyAge.myage();
+
+
+
+
+
+//Learning Strings
+// const a='jana';
+// console.log(a.length);
+
+// //i want to split each character in an array itself
+// const b=[];
+// for(i=0; i<a.length; i++){
+//     console.log(a[i]);
+//     // i am pushing inside the array iteself
+//     b.push(a[i]);
+    
+// }
+// console.log(b);
+
+// //we can break the above code using simple thing as the split method
+
+// const c=a.split('');
+// console.log(c);
+
+
+
+
+
+
+
+
+
+// String length
+// String slice()
+// String substring()
+// String substr()
+// String replace()
+// String replaceAll()
+// String toUpperCase()
+// String toLowerCase()
+// String concat()
+// String trim()
+// String trimStart()
+// String trimEnd()
+// String padStart()
+// String padEnd()
+// String charAt()
+// String charCodeAt()
+// String split()
+
+// //MyCode
+// const a='Jana';
+// console.log(a.length); //4
+// console.log(a.substring(2));//na
+// console.log(a.substr(1,3));//ana
+// console.log(a.replaceAll('a','n'));//Jnnn
+// console.log(a.toLowerCase());//jana
+// console.log(a.toUpperCase());//JANA
+// console.log(a.concat("rdhanan"));//Janardhanan
+// console.log(a.charAt(3));
+// console.log(a.split(''));
+// console.log(a.charCodeAt('a'));
+// console.log(a.slice());
+// console.log(a.replace('k','j'));
+// const b='Ja na rdhanan'
+// console.log(b.trim(''));
+
+
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+// let names="Jana,Logu,Naveen";
+// //Length
+// console.log(names.length);
+// let name='Jana';
+// console.log(name.length);
+
+// //Slice(start,end)
+// console.log(names.slice(5,9));
+// // substring(start, end)
+// console.log(names.substring(0,10));
+// // substr(start, length)
+// console.log(names.substr(5,4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Task -5 Youtube strict mode and Strings
+
+//If u are using the strict mode it will avoid the code changes as per the real time
+
+// 'use strict'
+
+// function abc(){
+//     console.log(this);
+// }
+
+// const a={
+//     name4:"jana",
+//     B:abc
+// }
+// abc();
+// a.B();
+
+
+
+//Using the without variable.
+
+// x=1;
+// const a={
+//   abc(){
+//     console.log(x);// here i will give ans 1
+//   }
+// }
+// a.abc();
+
+
+// 'use strict'
+// x=1;
+// const b={
+//   abc(){
+//     console.log(x);// using strict mode it will throw the error
+//   }
+// }
+// b.abc();
+
+
+// var x=320;
+
+// const s={
+   
+//     abc(){
+//         x=90;
+//         console.log(x);//90 ans
+//     }
+// }
+
+// s.abc();
+
+
+
+// 'use strict'
+
+// var x=320;
+
+// const s={
+   
+//     abc(){
+//         x=90;
+//         console.log(x);//90 ans
+//     }
+// }
+
+// s.abc();
+// console.log(x);//90
+
+// 'use strict'
+// function abc(){
+//     x=90;
+//     console.log(x);
+// }
+// abc();//Ref error
+// console.log(x);
+
+
+'use strict'
+var x;
+function abc(){
+    x=90;
+    console.log(x);
+}
+console.log(x);//undefined
+abc();//Ref error
+console.log(x);//90
+
+
+
+
